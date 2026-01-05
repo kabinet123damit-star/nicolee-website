@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nicole Baluyot Personal Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    background-color: lightpink;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px;
+    background-color: #f7c5e8;
+    border-radius: 20px;
+}
+
+/* Titles */
+h1, h2 {
+    color: #8b2f64;
+}
+
+/* Profile layout */
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 20px;
+    object-fit: cover;
+    background: #e5b1d5;
+}
+
+/* ----------- FAMILY MEMBERS (NEW STYLE) ----------- */
+
+.family-container {
+    background-color: #f7c5e8;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.family-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.family-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    background: #e5b1d5;
+}
+
+.family-box figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a2040;
+}
+
+.friends-container {
+    background-color: #f7c5e8;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.friends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.friend-box {
+    background: #f2a9d4;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.friend-box img {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    background: #e5b1d5;
+}
+
+.friend-box h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    color: #7b1e4e;
+}
+
+.friend-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.friend-box ul li {
+    color: #4a2040;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+.hobbies-container {
+    background-color: #f7c5e8;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.hobby-box {
+    background: #f2a9d4;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.hobby-box img {
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    object-fit: cover;
+    background: #e5b1d5;
+}
+
+.hobby-box h3 {
+    margin-top: 10px;
+    color: #7b1e4e;
+}
+
+.hobby-box p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #4a2040;
+}
+/* Icons */
+.icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 10px;
+}
+
+/* Responsive (Mobile) */
+@media (max-width: 700px) {
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    figcaption {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- ===================== STUDENT PROFILE ===================== -->
+<section>
+<h1>Student Profile</h1>
+
+<div class="profile-section">
+    <img src="nicole.jpg" class="profile-pic">
+
+    <div>
+        <h2>Nicole Baluyot</h2>
+        <p><b>Age:</b> 20</p>
+        <p><b>Grade Level:</b> Second Year</p>
+        <p><b>School:</b> Kolehiyo ng Lungsod ng Lipa</p>
+        <p><b>Introduction:</b> I'm just a simple girl who loves to eat, watch K-dramas, and play online games for fun. 
+            I love spending my time with my little sister; we always have a fun chat. I also love to help my father with house chores. 
+            I'm the kind of girl who always does her best to achieve her goals and dreams.</p>
+    </div>
+</div>
+</section>
+
+
+
+<!-- ===================== DETAILS ===================== -->
+<section>
+<h1>Detailed Information</h1>
+
+<p><b>Birthday:</b> October 14, 2005</p>
+<p><b>Address:</b> Lynville Res, Latag Purok 3, BLK 12 LOT 5 Honduras Street, Lipa City, Batangas</p>
+
+<p><b>Academic Background:</b></p>
+<ul>
+    <li>Zapotec Elementary School Binan, Laguna</li>
+    <li>Gaudencio B. Lontok Memorial Integrated School</li>
+    <li>Lipa City Senior High School</li>
+</ul>
+
+<p><b>Awards & Achievements:</b></p>
+<ul>
+    <li>With Honors</li>
+    <li>Best in Participation</li>
+</ul>
+</section>
+
+
+
+<!-- ===================== FAMILY MEMBERS (Updated) ===================== -->
+<section class="family-container">
+    <h1>Family Members</h1>
+
+    <div class="family-grid">
+
+        <figure class="family-box">
+            <img src="papa.jpg" alt="Father">
+            <figcaption>Edgar Baluyot<br><small>(Father)</small></figcaption>
+        </figure>
+
+        <figure class="family-box">
+            <img src="mama.jpg" alt="Mother">
+            <figcaption>Ma. Elena Baluyot<br><small>(Mother)</small></figcaption>
+        </figure>
+
+        <figure class="family-box">
+            <img src="maika.jpg" alt="Sister">
+            <figcaption>Maika Baluyot<br><small>(Younger Sister)</small></figcaption>
+        </figure>
+
+    </div>
+</section>
+
+
+
+<section class="friends-container">
+    <h1>Friends & Co-Workers</h1>
+
+    <div class="friends-grid">
+
+        <!-- SCHOOL FRIENDS -->
+        <div class="friend-box">
+            <img src="friends1.jpg">
+            <h3>School Friends</h3>
+            <ul>
+                <li>Kim Masilungan</li>
+                <li>Jin Burgos</li>
+                <li>Baby Jane bilia</li>
+                <li>Chariz Preclao</li>
+                <li>Kyla Erana</li>
+                <li>Princess Lubis</li>
+
+            </ul>
+        </div>
+
+        <!-- ORIGINAL FRIENDS -->
+        <div class="friend-box">
+            <img src="friends2.jpg">
+            <h3>Original Friends</h3>
+            <ul>
+                <li>Jillian Silva</li>
+                <li>Maira Esbera </li>
+                <li>Andrea Kastullo</li>
+                <li>Bien lamughati</li>
+               
+            </ul>
+        </div>
+
+        <!-- MY BEST BUDDY -->
+        <div class="friend-box">
+            <img src="friends3.jpg">
+            <h3>My Best Buddy</h3>
+            <ul>
+                <li>Isabelle Tapire</li>
+                 <li>Riana Baluyot</li>
+                  
+            </ul>
+        </div>
+
+        <!-- HIGHSCHOOL FRIENDS -->
+        <div class="friend-box">
+            <img src="friends4.jpg">
+            <h3>Highschool Friends</h3>
+            <ul>
+                <li>Angelo Makapilyo</li>
+                <li>Angelica Magtibay</li>
+                <li>Rayah Reyes</li>
+                <li>Shane Abante</li>
+                <li>Raven Loreto</li>
+            </ul>
+        </div>
+
+       
+
+        <!-- CHILDHOOD FRIENDS -->
+        <div class="friend-box">
+            <img src="friends5.jpg">
+            <h3>Childhood Friends</h3>
+            <ul>
+                <li>Kiara Arebalo</li>
+              
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="hobbies-container">
+    <h1>Hobbies & Extra Activities</h1>
+
+    <div class="hobbies-grid">
+
+        <!-- HOBBY 1 -->
+        <div class="hobby-box">
+            <img src="hobby1.jpg">
+            <h3>Watching K-Dramas</h3>
+            <p>I love watching K-dramas because they give thrills, excitement, and fun entertainment.</p>
+        </div>
+
+        <!-- HOBBY 2 -->
+        <div class="hobby-box">
+            <img src="hobby2.jpg">
+            <h3>Doing Makeup</h3>
+            <p>Another hobby I have is doing my makeup; it boosts my confidence.</p>
+        </div>
+
+        <!-- OPTIONAL – You can add more hobbies -->
+        <!--
+        <div class="hobby-box">
+            <img src="hobby3.jpg">
+            <h3>Photography</h3>
+            <p>I enjoy taking pictures and capturing beautiful moments.</p>
+        </div>
+        -->
+
+    </div>
+</section>
+
+
+
+<!-- ===================== CONTACT ===================== -->
+<section>
+<h1>Contact Details & Social Media</h1>
+
+<p><b>Email:</b> nicolebaluyot713@gmail.com</p>
+<p><b>Phone:</b> 09557423086</p>
+
+<h2>Social Media</h2>
+
+<figure>
+    <img src="fb-icon.jpg" class="icon">
+    <figcaption><a href="https://www.facebook.com/nicole.baluyot.218555">Facebook Link</a></figcaption>
+</figure>
+
+<figure>
+    <img src="ig-icon.jpg" class="icon">
+    <figcaption><a href="https://www.instagram.com/nics_luvzvw/">Instagram Link</a></figcaption>
+</figure>
+
+</section>
+
+</body>
+</html>
